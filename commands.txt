@@ -1,0 +1,228 @@
+codepen
+jssfiddle
+css tricks
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+PS D:\QA\Desktop\git prac\courseratest> git status
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        site/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS D:\QA\Desktop\git prac\courseratest> git status
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+        new file:   site/index.html
+PS D:\QA\Desktop\git prac\courseratest> git commit -m "first"
+[gh-pages 4fd4c65] first
+ create mode 100644 site/index.html
+PS D:\QA\Desktop\git prac\courseratest> git status
+Your branch is ahead of 'origin/gh-pages' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS D:\QA\Desktop\git prac\courseratest> git push
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 497 bytes | 497.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/marioman31/courseratest.git
+PS D:\QA\Desktop\git prac\courseratest> git status
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+PS D:\QA\Desktop\git prac\courseratest> git add .
+PS D:\QA\Desktop\git prac\courseratest> git push
+Everything up-to-date
+PS D:\QA\Desktop\git prac\courseratest> git branch
+  main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS D:\QA\Desktop\git prac\courseratest> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS D:\QA\Desktop\git prac\courseratest> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+PS D:\QA\Desktop\git prac\courseratest> git add.
+
+The most similar command is
+        add
+PS D:\QA\Desktop\git prac\courseratest> git push
+Everything up-to-date
+PS D:\QA\Desktop\git prac\courseratest> ls
+
+
+
+Mode                 LastWriteTime         Length Name
+-a----          7/1/2022   2:16 PM            211 index.html
+-a----          7/1/2022   2:15 PM             22 README.md
+
+PS D:\QA\Desktop\git prac\courseratest> git commit
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+PS D:\QA\Desktop\git prac\courseratest> git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+PS D:\QA\Desktop\git prac\courseratest> gi^T push
+gi¶ : The term 'gi¶' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ gi¶ push
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (gi¶:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+Everything up-to-date
+Aborting commit due to empty commit message.
+PS D:\QA\Desktop\git prac\courseratest> git commit -m "first"
+[main 015df65] first
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+PS D:\QA\Desktop\git prac\courseratest> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/marioman31/courseratest.git
+   73ecf2b..015df65  main -> main
+PS D:\QA\Desktop\git prac\courseratest> ls
+
+
+    Directory: D:\QA\Desktop\git prac\courseratest
+
+----                 -------------         ------ ----
+-a----          7/1/2022   2:16 PM            211 index.html
+-a----          7/1/2022   2:15 PM             22 README.md
+
+PS D:\QA\Desktop\git prac\courseratest> git rm README.md
+rm 'README.md'
+PS D:\QA\Desktop\git prac\courseratest> ls
+
+
+    Directory: D:\QA\Desktop\git prac\courseratest
+
+
+Mode                 LastWriteTime         Length Name
+-a----          7/1/2022   2:16 PM            211 index.html
+
+
+PS D:\QA\Desktop\git prac\courseratest> git status
+On branch main
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    README.md
+
+PS D:\QA\Desktop\git prac\courseratest> git push
+Everything up-to-date
+PS D:\QA\Desktop\git prac\courseratest> git commit -m "trash gone"
+ 1 file changed, 2 deletions(-)
+PS D:\QA\Desktop\git prac\courseratest> ls
+
+
+    Directory: D:\QA\Desktop\git prac\courseratest
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          7/1/2022   2:16 PM            211 index.html
+
+
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS D:\QA\Desktop\git prac\courseratest> git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 229 bytes | 229.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/marioman31/courseratest.git
+   015df65..ca8f08f  main -> main
+PS D:\QA\Desktop\git prac\courseratest> git pull
+Already up to date.
+PS D:\QA\Desktop\git prac\courseratest> ls
+
+
+    Directory: D:\QA\Desktop\git prac\courseratest
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+
+
+PS D:\QA\Desktop\git prac\courseratest> git add commands.txt -m "console"
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+PS D:\QA\Desktop\git prac\courseratest> git add commands.txt
+PS D:\QA\Desktop\git prac\courseratest> git commit commands.txt -m "console"
+[main 94d8aa1] console
+ 1 file changed, 171 insertions(+)
+ create mode 100644 commands.txt
+PS D:\QA\Desktop\git prac\courseratest> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.71 KiB | 1.71 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/marioman31/courseratest.git
+   ca8f08f..94d8aa1  main -> main
+PS D:\QA\Desktop\git prac\courseratest> browser-sync start --server --directory --files "*"
+browser-sync : File C:\Users\mario\AppData\Roaming\npm\browser-sync.ps1 cannot be loaded because running scripts is
+disabled on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ browser-sync start --server --directory --files "*"
++ ~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS D:\QA\Desktop\git prac\courseratest>
